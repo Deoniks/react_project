@@ -7,7 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e8ec;
+  background-color: #b9bbbe;
 }
 
 ul {
@@ -19,6 +19,52 @@ ul {
 li a {
   display: block;
   width: 60px;
+}
+
+.flexer {
+  display: flex;
+  color: blueviolet;
+  font-size: 24px;
+}
+
+.flexer > div:nth-child(3){
+  margin-left: auto;
+  text-size-adjust: auto;
+}
+
+.flexer > div:nth-child(2){
+  margin-right: 60%;
+  text-size-adjust: auto;
+}
+.flexer > div:nth-child(1){
+  margin-right: auto;
+  text-size-adjust: auto;
+}
+
+.btn-flexe {
+  text-size-adjust: auto;
+  font-size: 24px;
+  background-color: white;
+  color: blueviolet;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.01s;
+  cursor: pointer;
+}
+
+.btn-flexe:hover {
+  background-color: red;
+  color: #fff;
+  box-shadow: 0 4px rgb(250, 40, 40);
+}
+
+.btn-flexe:active {
+  background-color: #a30909;
+  box-shadow: 0 2px rgb(112, 2, 2);
+  transform: rotateY(4px);
 }
 
 .App {
@@ -95,6 +141,7 @@ li a {
       opacity: 1;
     }
   }
+
 }
 
 .overlay.animated {
